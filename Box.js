@@ -3,7 +3,7 @@ import React from 'react';
 import {StyleSheet, View, Text, Button, Image} from 'react-native';
 import objetos from'./objetos';
 
-function Box({id, description,}) {
+function Box({id, description, img, stock}) {
 
     const navigation = useNavigation();
     return (
@@ -20,7 +20,8 @@ function Box({id, description,}) {
                         onPress={() => navigation.navigate('Details',{
                         id: id,
                         description: description,
-                        img: img
+                        img: img,
+                        stock: stock
                         })}
                     />
         </View>
