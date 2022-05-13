@@ -1,13 +1,17 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import Bottom from './Bottom';
 
 function Details({route, navigation}) {
 
-    const {id, description} = route.params;
+    const {id, description, imagen} = route.params;
 
     return (
         <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "green"}}>
             <Text>Details Screen</Text>
+            <Image
+                source={{uri:imagen}}
+            />
 
             <Text>Screen: {id}</Text>
             <Text>Description: {description}</Text>

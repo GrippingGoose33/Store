@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView, StyleSheet, View, Image} from 'react-native';
 import './styles.js';
 import Box from './Box';
-import NavegationBottom from './NavigationBottom';
+import Bottom from './Bottom';
 import objetos from './objetos';
 
 
@@ -25,7 +25,7 @@ function Store({navigation}) {
             </View>
             </ScrollView>
 
-            <NavegationBottom navigation={navigation} />
+            <Bottom navigation={navigation} />
     
         </View>
     );
