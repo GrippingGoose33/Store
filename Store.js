@@ -1,10 +1,9 @@
 import React from 'react';
 import {ScrollView, StyleSheet, View, Image} from 'react-native';
 import './styles.js';
-import styles from './styles';
 import Box from './Box';
 import NavegationBottom from './NavigationBottom';
-import tasks from './Data/Task';
+import objetos from './objetos';
 
 
 function Store({navigation}) {
@@ -13,11 +12,16 @@ function Store({navigation}) {
         <View style = {styles.root}>
             <ScrollView>
             <View>
-                <Image
-                    style = {
-                        'https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SY355_.jpg'
-                    }
+                {
+                objetos.map((objetos, v)=> (
+                    <Box key={v}
+                    imagen = {objetos.img}
+                    id = {objetos.id}
+                    desctiption = {objetos.description}
                 />
+                
+                ))
+                }
             </View>
             </ScrollView>
 
