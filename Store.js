@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {ScrollView, StyleSheet, View, Image} from 'react-native';
 import './styles.js';
 import styles from './styles';
 import Box from './Box';
@@ -13,15 +13,11 @@ function Store({navigation}) {
         <View style = {styles.root}>
             <ScrollView>
             <View>
-            {
-                tasks.map((task, v)=> (
-                <Box key={v}
-                id = {task.idd}
-                desctiption = {task.description}
+                <Image
+                    style = {
+                        'https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SY355_.jpg'
+                    }
                 />
-
-                ))
-            }
             </View>
             </ScrollView>
 
@@ -46,18 +42,6 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         alignItems: 'center',
     },
-
-    containerNavBottom: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-
-        padding: 5,
-        width:'100%',
-        height: 50,
-        position: 'absolute',
-        bottom: 0,
-    }
 
 })
 

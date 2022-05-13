@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Button} from 'react-native';
 
-function Bottom(props) {
+function Bottom({navigation}) {
     return (
         <View style={styles.root}>
             <Button
