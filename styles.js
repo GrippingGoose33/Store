@@ -5,6 +5,7 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",   
+        backgroundColor:"red"
     },
 
     containerBox: {
@@ -13,7 +14,7 @@ export default StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: '#d50000',
+        backgroundColor: '#F50C96',
     },  
 
     box: {

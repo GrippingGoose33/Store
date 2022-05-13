@@ -34,15 +34,15 @@ const styles = StyleSheet.create({
         height: 150,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "lightgray",
+        backgroundColor: "#DC0CF5",
         borderWidth: 1,
         borderRadius: 0,
         margin: 10,
     },
 
     tinyLogo: {
-        width: 50,
-        height: 50,
+        width: 80,
+        height: 80,
       },
 })
 

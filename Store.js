@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, StyleSheet, View, Image} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import './styles.js';
 import Box from './Box';
 import Bottom from './Bottom';
@@ -17,7 +17,8 @@ function Store({navigation}) {
                     <Box key={v}
                     img = {objetos.img}
                     id = {objetos.id}
-                    desctiption = {objetos.description}
+                    description = {objetos.description}
+                    stock = {objetos.stock}
                 />
                 
                 ))
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: '#ccff90'
+        backgroundColor: '#F50C76'
     },
 
     containerBox: {
