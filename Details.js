@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import Bottom from './Bottom';
 
 function Details({route, navigation}) {
@@ -10,7 +10,7 @@ function Details({route, navigation}) {
         <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "green"}}>
             <Text>Details Screen</Text>
             <Image
-                source={{uri:imagen}}
+                source={{uri:{img}}}
             />
 
             <Text>Screen: {id}</Text>

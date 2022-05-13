@@ -1,16 +1,17 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet, View, Text, Button} from 'react-native';
+import {StyleSheet, View, Text, Button, Image} from 'react-native';
+import objetos from'./objetos';
 
-function Box({id, description}) {
+function Box({id, description,}) {
 
     const navigation = useNavigation();
     return (
         <View style={styles.root}>
-            <Text>Objeto# {task.id}</Text>
+            <Text>Objeto# {objetos.id}</Text>
                     <Image
                     style={styles.tinyLogo}
-                        source={{uri:imagen}}
+                        source={{uri:img}}
                     />
 
                     <Button
@@ -18,8 +19,8 @@ function Box({id, description}) {
                         title="Detalles"
                         onPress={() => navigation.navigate('Details',{
                         id: id,
-                        description: description
-
+                        description: description,
+                        img: img
                         })}
                     />
         </View>
@@ -29,8 +30,8 @@ function Box({id, description}) {
 const styles = StyleSheet.create({
 
     root: {
-        width: 100,
-        height: 100,
+        width: 150,
+        height: 150,
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "lightgray",
@@ -40,8 +41,8 @@ const styles = StyleSheet.create({
     },
 
     tinyLogo: {
-        width: 100,
-        height: 100,
+        width: 50,
+        height: 50,
       },
 })
 

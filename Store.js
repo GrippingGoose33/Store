@@ -11,11 +11,11 @@ function Store({navigation}) {
     return (
         <View style = {styles.root}>
             <ScrollView>
-            <View>
+            <View style = {styles.containerBox}>
                 {
                 objetos.map((objetos, v)=> (
                     <Box key={v}
-                    imagen = {objetos.img}
+                    img = {objetos.img}
                     id = {objetos.id}
                     desctiption = {objetos.description}
                 />
@@ -25,7 +25,7 @@ function Store({navigation}) {
             </View>
             </ScrollView>
 
-            <Bottom navigation={navigation} />
+            <   Bottom navigation={navigation} />
     
         </View>
     );
