@@ -19,6 +19,7 @@ function Store({navigation}) {
                     id = {objetos.id}
                     description = {objetos.description}
                     stock = {objetos.stock}
+                    title = {objetos.title}
                 />
                 
                 ))

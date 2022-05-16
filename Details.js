@@ -4,7 +4,18 @@ import Bottom from './Bottom';
 
 function Details({route, navigation}) {
 
-    const {id, description, img, stock} = route.params;
+    const {title, id, description, img, stock} = route.params;
+
+    navigation.setOptions({
+        title: title,
+        headerRight:()=>{
+            <Button
+                title="Buy"
+                onPress={()=>{}}
+                disable={stock === 0}
+            />
+        }
+    })
 
     return (
         <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "purple"}}>
