@@ -11,7 +11,7 @@ function Home({navigation}) {
                 source={require('./assets/tienda_tecnologia.jpg')}
             />
             <Text style={styles.textH1}>La tienda en linea</Text>
-            <Text>La tienda de tecnologia donde hay servicio 24-7 y si atraso a tus entregas</Text>
+            <Text style={styles.text}>La tienda de tecnologia donde hay servicio 24-7 y si atraso a tus entregas</Text>
             <Button 
             title="ir a la Tienda"
             onPress={() => navigation.navigate('Tienda')}
