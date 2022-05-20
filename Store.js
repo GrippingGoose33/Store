@@ -6,7 +6,7 @@ import Box from './Box';
 import objetos from './objetos';
 
 
-function Store() {
+function Store({navigation}) {
 
     return (
         <View style = {styles.root}>

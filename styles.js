@@ -28,7 +28,13 @@ export default StyleSheet.create({
         margin: 10,
     },  
 
-    text: {
+    textH1: {
         marginBottom: 10,
-    }
+        fontSize: 20, 
+    },
+
+    Logo: {
+        width: 350,
+        height: 200,
+      },
 })

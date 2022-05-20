@@ -14,7 +14,6 @@ function Root() {
     <Drawer.Navigator>
       <Drawer.Screen name="Home" component={Home} />
       <Drawer.Screen name="Tienda" component={Store} />
-      <Stack.Screen name="Detalles" component={Details} options={{title:"Objetos"}} />
     </Drawer.Navigator>
   );
 }
@@ -22,12 +21,13 @@ function Root() {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Home'>
+      <Stack.Navigator>
         <Stack.Screen
           name="Root"
-          component="Root"
+          component={Root}
           options={{ headerShown: false }}
         />
+        <Stack.Screen name="Detalles" component={Details}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

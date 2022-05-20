@@ -17,7 +17,7 @@ function Box({id, description, img, stock}) {
                     <Button
                         color="#455q64"
                         title="Detalles"
-                        onPress={() => navigation.navigate('Details',{
+                        onPress={() => navigation.navigate('Detalles',{
                         id: id,
                         description: description,
                         img: img,
