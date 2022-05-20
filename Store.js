@@ -1,12 +1,12 @@
 import React from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {Button, ScrollView, StyleSheet, View} from 'react-native';
 import './styles.js';
 import Box from './Box';
-import Bottom from './Bottom';
+//import Bottom from './Bottom';
 import objetos from './objetos';
 
 
-function Store({navigation}) {
+function Store() {
 
     return (
         <View style = {styles.root}>
@@ -26,9 +26,6 @@ function Store({navigation}) {
                 }
             </View>
             </ScrollView>
-
-            <   Bottom navigation={navigation} />
-    
         </View>
     );
 }
